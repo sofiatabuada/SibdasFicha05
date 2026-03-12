@@ -6,7 +6,7 @@
     /* Remove preenchimentos internos padrão */
     box-sizing: border-box;
     /* Inclui bordas e preenchimento no cálculo da largura/altura */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     /* Define a fonte principal usada no site */
 }
 
@@ -103,4 +103,126 @@
     /* Espaço para não ficar por baixo da navbar */
     /* Permite que o conteúdo cresça conforme o espaço disponível */
     /* Espaçamento interno para melhor leitura */
+}
+
+/* Define o estilo geral da tabela */
+table {
+    width: 100%;
+    /* Ocupa toda a largura do contêiner */
+    border-collapse: collapse;
+    /* Elimina espaços entre as células */
+    margin-top: 20px;
+    /* Espaço acima da tabela */
+    background-color: #fff;
+    /* Fundo branco para a tabela */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    /* Sombra sutil para dar profundidade */
+}
+
+/* Estilização do cabeçalho da tabela */
+thead {
+    background-color: #212529;
+    color: #ffffff;
+    text-align: left;
+    /* Fundo escuro para o cabeçalho */
+    /* Cor do texto em branco */
+    /* Alinha o texto à esquerda */
+}
+
+/* Define o espaçamento e estilo dos cabeçalhos de coluna */
+thead th {
+    padding: 12px;
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    /* Espaçamento interno em cada célula do cabeçalho */
+    /* Tamanho da fonte */
+    /* Transforma o texto para iniciar com letra maiúscula */
+    /* Espaçamento entre letras */
+}
+
+/* Estilização do corpo da tabela (células de dados) */
+tbody td {
+    padding: 10px 12px;
+    /* Espaçamento interno nas células */
+    border-bottom: 1px solid #dee2e6;
+    /* Linha inferior para separar as linhas */
+    font-size: 14px;
+    /* Tamanho da fonte para os dados */
+    color: #343a40;
+    /* Cor do texto em tom escuro */
+}
+
+/* Efeito de hover nas linhas da tabela */
+tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Estilização dos links dentro das células da tabela */
+td a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    /* Cor azul para os links */
+    /* Remove sublinhado padrão */
+    /* Aplica negrito aos links */
+}
+
+/* Efeito hover nos links da tabela */
+td a:hover {
+    text-decoration: underline;
+    /* Sublinha o link ao passar o rato */
+}
+
+/* Estilização dos separadores (span) dentro das células */
+td span {
+    color: #6c757d;
+    margin: 0 5px;
+    /* Cor em tom de cinza para os separadores */
+    /* Espaço à esquerda e direita dos separadores */
+}
+
+/* Estilização dos Botões Superiores */
+/* Contentor superior que contém o título e o botão de novo cliente */
+.actions-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Utiliza o layout flexível */
+    /* Distribui os elementos aos extremos */
+    /* Alinha os elementos verticalmente */
+    /* Espaço abaixo do contêiner */
+}
+
+/* Estilização do título na seção de ações */
+.actions-top h2 {
+    font-size: 20px;
+    color: #212529;
+}
+
+/* Tamanho da fonte do título */
+/* Cor do texto para o título */
+/* Estilização do link (botão) de novo cliente */
+.actions-top a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+    /* Exibe como bloco em linha */
+    /* Espaçamento interno para o botão */
+    /* Fundo escuro para o botão */
+    /* Texto em branco */
+    /* Bordas arredondadas */
+    /* Sem sublinhado */
+    /* Tamanho da fonte */
+    /* Transição suave para mudança de fundo */
+}
+    /* Efeito hover para o botão de novo cliente */
+.actions-top a:hover {
+        background-color: #343a40;
 }
